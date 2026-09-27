@@ -3,7 +3,7 @@
 > **Lviv Polytechnic — Laboratory Work #2**  
 > Team university project: a modern Porsche dealer website concept built with React and modern web technologies.
 
-![Status](https://img.shields.io/badge/status-completed-success)
+![Status](https://img.shields.io/badge/status-in%20progress-yellow)
 ![Project](https://img.shields.io/badge/project-university%20lab%20%232-blue)
 ![Frontend](https://img.shields.io/badge/frontend-React-61DAFB)
 ![Build](https://img.shields.io/badge/build-Vite-646CFF)
