@@ -36,6 +36,7 @@ export function DealerShell({ children }: { children: React.ReactNode }) {
       </header>
       {children}
       <UtilityBar />
+      <Developers />
       <Footer />
     </div>
   );
@@ -49,6 +50,35 @@ export function UtilityBar() {
         <a className="utility-link" href="mailto:info@porsche.lviv.ua"><Mail />Запит на пропозицію</a>
         <Link className="utility-link" to="/contact"><CarFront />Тест-драйв</Link>
         <Link className="utility-link" to="/contact"><MapPin />Місцезнаходження</Link>
+      </div>
+    </section>
+  );
+}
+
+function Developers() {
+  const developers = [
+    { name: "Vladyslav Savchuk", role: "Architect / Team Lead" },
+    { name: "Oleksandr Koval", role: "Developer" },
+    { name: "Yulian Nosovych", role: "Developer" },
+    { name: "Taras Lychyk", role: "Expert" },
+    { name: "Roman Sydoruk", role: "QC Engineer / Closer" },
+    { name: "Kyryl Skliar", role: "Analyst, Developer" },
+    { name: "Artem Baraniuk", role: "Idea Generator / Expert" },
+    { name: "Oleh Cholivskiy", role: "Coordinator" },
+  ];
+
+  return (
+    <section className="border-t border-border bg-background" aria-labelledby="developers-title">
+      <div className="content-wrap py-10">
+        <h2 id="developers-title" className="text-xl font-medium">Developers</h2>
+        <ul className="mt-5 grid gap-x-10 md:grid-cols-2">
+          {developers.map((developer) => (
+            <li key={developer.name} className="flex flex-col gap-1 border-t border-border py-4 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+              <span className="font-medium">{developer.name}</span>
+              <span className="text-sm text-muted-foreground">{developer.role}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
